@@ -10,7 +10,7 @@ Swift Package Manager — in Xcode, *File → Add Package Dependencies…* with 
 or in a `Package.swift`, at the same version as `palbase-swift`:
 
 ```swift
-.package(url: "https://github.com/palgroup/palbase-swift-voice", exact: "0.5.2")
+.package(url: "https://github.com/palgroup/palbase-swift-voice", exact: "0.6.0")
 ```
 
 Link `PalbaseVoice`. It brings Palbase's core of the same version and LiveKit's WebRTC
