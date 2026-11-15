@@ -1,5 +1,5 @@
 // swift-tools-version:6.0
-// Palbase's iOS voice SDK 0.19.0 — a chat's live voice over WebRTC, apart from palbase-swift: an app that talks to no
+// Palbase's iOS voice SDK 0.20.0 — a chat's live voice over WebRTC, apart from palbase-swift: an app that talks to no
 // voice resolves no WebRTC. Built from palbase-swift-src by scripts/xcframework.sh; do not edit here.
 import PackageDescription
 
@@ -10,11 +10,11 @@ let package = Package(
         .library(name: "PalbaseVoice", targets: ["PalbaseVoice", "PalbaseVoiceLinks"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/palgroup/palbase-swift", exact: "0.19.0"),
+        .package(url: "https://github.com/palgroup/palbase-swift", exact: "0.20.0"),
         .package(url: "https://github.com/livekit/webrtc-xcframework.git", exact: "150.7871.04"),
     ],
     targets: [
-        .binaryTarget(name: "PalbaseVoice", url: "https://palgroup.github.io/palbase-swift-binaries/0.19.0/PalbaseVoice.xcframework.zip", checksum: "4491778b275a48f23ec13fe5710bb817414f93c661f0ab03b8467dc449162c70"),
+        .binaryTarget(name: "PalbaseVoice", url: "https://palgroup.github.io/palbase-swift-binaries/0.20.0/PalbaseVoice.xcframework.zip", checksum: "0b0a57896276755c46107299fcacdf83e2ab2ec98d77300dc5c42d7ba308104c"),
         .target(name: "PalbaseVoiceLinks", dependencies: [.product(name: "Palbase", package: "palbase-swift"), .product(name: "LiveKitWebRTC", package: "webrtc-xcframework")]),
     ]
 )
