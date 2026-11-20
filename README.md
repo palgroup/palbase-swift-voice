@@ -1,8 +1,11 @@
-# Palbase Voice for iOS
+# Palbase Voice for iOS and macOS
 
 A chat's live voice in an app built on [Palbase](https://palbase.studio): the microphone to the voice and its voice
-back, over WebRTC — apart from [palbase-swift](https://github.com/palgroup/palbase-swift), so an app that talks to no
-voice resolves no WebRTC. Distributed as a binary XCFramework.
+back, over WebRTC.
+
+`PalbaseVoice` is now included directly in [palbase-swift](https://github.com/palgroup/palbase-swift) (for both iOS 18+
+and macOS 15+, with zero external dependencies). This package re-exports `PalbaseVoice` from `palbase-swift` for
+compatibility.
 
 ## Install
 
@@ -10,7 +13,7 @@ Swift Package Manager — in Xcode, *File → Add Package Dependencies…* with 
 or in a `Package.swift`, at the same version as `palbase-swift`:
 
 ```swift
-.package(url: "https://github.com/palgroup/palbase-swift-voice", exact: "0.21.1")
+.package(url: "https://github.com/palgroup/palbase-swift-voice", exact: "0.22.0")
 ```
 
 Link `PalbaseVoice`. It brings Palbase's core of the same version and LiveKit's WebRTC
